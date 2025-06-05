@@ -1,0 +1,710 @@
+[
+  {
+    "url": "https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fsignin_passive%26feature%3Dpassive&hl=en&ifkv=ASKV5Mh9M16xy0FG5S6ANWmoQdfYeAlG69n1-3IlPy14lhAICHPoZS0guCC8BIZcrTuIFFTTWv-yGg&passive=true&service=youtube&uilel=3&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1211244895%3A1747487979554534",
+    "predictionScore": 23.689999999999998,
+    "timestamp": "2025-05-17T13:19:39.665Z",
+    "verdict": "Safe"
+  },
+  {
+    "url": "https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fsignin_passive%26feature%3Dpassive&hl=en&ifkv=ASKV5Mgfs5RCeHOw3EvGNR_eYk4dzVwKwjFNC0Fg0OSsJxCD12SXNPKX5XWEcL-cDIIzn9JPgVrA&passive=true&service=youtube&uilel=3&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-398693891%3A1747496998109606",
+    "predictionScore": 21.869999999999997,
+    "timestamp": "2025-05-17T15:49:58.193Z",
+    "verdict": "Safe"
+  },
+  {
+    "url": "https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fsignin_passive%26feature%3Dpassive&hl=en&ifkv=ASKV5MjXl5Ka16Hv2y5FFoelDMjDvzj-ZKn2-8BWQN6hYvCWnHx1s8E0fstInujirr1yHxkvuIa7yA&passive=true&service=youtube&uilel=3&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S688208982%3A1747502093429310",
+    "predictionScore": 23.08,
+    "timestamp": "2025-05-17T17:14:53.545Z",
+    "verdict": "Safe"
+  },
+  {
+    "url": "https://account.hackthebox.com/login",
+    "score": 0.5767098155571978,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:31:58.525Z"
+  },
+  {
+    "url": "https://account.hackthebox.com/dashboard",
+    "score": 0.5767098155571979,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:31:58.641Z"
+  },
+  {
+    "url": "https://account.hackthebox.com/dashboard",
+    "score": 0.5767098155571979,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:31:59.184Z"
+  },
+  {
+    "url": "https://account.hackthebox.com/dashboard",
+    "score": 0.5767098155571979,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:31:59.230Z"
+  },
+  {
+    "url": "https://www.facebook.com/",
+    "score": 0.49161048795945483,
+    "verdict": "Safe",
+    "timestamp": "2025-05-21T12:32:15.739Z"
+  },
+  {
+    "url": "https://www.facebook.com/",
+    "score": 0.4916104879594549,
+    "verdict": "Safe",
+    "timestamp": "2025-05-21T12:32:18.342Z"
+  },
+  {
+    "url": "https://www.facebook.com/",
+    "score": 0.4916104879594549,
+    "verdict": "Safe",
+    "timestamp": "2025-05-21T12:32:18.677Z"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "score": 1,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:32:39.857Z"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "score": 1,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:32:39.919Z"
+  },
+  {
+    "url": "https://account.hackthebox.com/dashboard",
+    "score": 0.5767098155571979,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:35:06.706Z"
+  },
+  {
+    "url": "https://www.bugbountytraining.com/challenges/challenge-8.php#clk=%3Cimg%20src=x%20onerror=alert(1)%3E",
+    "score": 1,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:37:21.290Z"
+  },
+  {
+    "url": "https://www.bugbountytraining.com/challenges/challenge-8.php#clk=%3Cimg%20src=x%20onerror=alert(1)%3E",
+    "score": 1,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:37:21.353Z"
+  },
+  {
+    "url": "https://github.com/r0-dev-null/ctf-writeups/tree/main/DCTF%202024%20Quals",
+    "score": 0.1655545055883875,
+    "verdict": "Safe",
+    "timestamp": "2025-05-21T12:37:47.100Z"
+  },
+  {
+    "url": "https://github.com/r0-dev-null/ctf-writeups/tree/main/DCTF%202024%20Quals",
+    "score": 0.16555450558838752,
+    "verdict": "Safe",
+    "timestamp": "2025-05-21T12:37:47.159Z"
+  },
+  {
+    "url": "https://github.com/r0-dev-null/ctf-writeups/tree/main/DCTF%202024%20Quals",
+    "score": 0.16555450558838747,
+    "verdict": "Safe",
+    "timestamp": "2025-05-21T12:37:47.815Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=wikipedia&oq=wiki&gs_lcrp=EgZjaHJvbWUqBwgBEAAYjwIyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAjIGCAMQRRg5MgYIBBBFGEEyBggFEEUYQTIGCAYQRRg8MgYIBxAuGEDSAQgyNDI1ajBqMagCALACAA&sourceid=chrome&ie=UTF-8",
+    "score": 0.9690499135087909,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:38:20.121Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=wikipedia&oq=wiki&gs_lcrp=EgZjaHJvbWUqBwgBEAAYjwIyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAjIGCAMQRRg5MgYIBBBFGEEyBggFEEUYQTIGCAYQRRg8MgYIBxAuGEDSAQgyNDI1ajBqMagCALACAA&sourceid=chrome&ie=UTF-8",
+    "score": 0.9690499135087909,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:38:20.455Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=wikipedia&oq=wiki&gs_lcrp=EgZjaHJvbWUqBwgBEAAYjwIyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAjIGCAMQRRg5MgYIBBBFGEEyBggFEEUYQTIGCAYQRRg8MgYIBxAuGEDSAQgyNDI1ajBqMagCALACAA&sourceid=chrome&ie=UTF-8",
+    "score": 0.9690499135087909,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:38:20.762Z"
+  },
+  {
+    "url": "https://medium.com/@The_Hiker/lookup-tryhackme-walkthrough-thehiker-9276508b7d84",
+    "score": 0.9792060450561348,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:39:35.905Z"
+  },
+  {
+    "url": "https://github.com/aloner-pro/Steno",
+    "score": 1,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:42:24.334Z"
+  },
+  {
+    "url": "https://github.com/r0-dev-null/ctf-writeups/tree/main/DCTF%202024%20Quals",
+    "score": 0.1655545055883875,
+    "verdict": "Safe",
+    "timestamp": "2025-05-21T12:42:41.186Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=wikipedia&oq=wi&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYOzIHCAMQABiPAjIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPTIGCAcQLhhA0gEIMTUzOGowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
+    "score": 0.9690499135087909,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:46:44.972Z"
+  },
+  {
+    "url": "https://ro.wikipedia.org/wiki/Pagina_principal%C4%83",
+    "score": 0.4916104879594549,
+    "verdict": "Safe",
+    "timestamp": "2025-05-21T12:46:52.797Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=wikipedia&oq=wi&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYOzIHCAMQABiPAjIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPTIGCAcQLhhA0gEIMTUzOGowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
+    "score": 0.9690499135087909,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:47:01.515Z"
+  },
+  {
+    "url": "https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github",
+    "score": 0.07069217582129514,
+    "verdict": "Safe",
+    "timestamp": "2025-05-21T12:51:01.862Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=wikipedia&oq=wi&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYOzIHCAMQABiPAjIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPTIGCAcQLhhA0gEIMTUzOGowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
+    "score": 0.9690499135087909,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:56:05.726Z"
+  },
+  {
+    "url": "https://ro.wikipedia.org/wiki/Pagina_principal%C4%83",
+    "score": 0.49161048795945483,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:56:14.079Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=wikipedia&oq=wi&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYOzIHCAMQABiPAjIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPTIGCAcQLhhA0gEIMTUzOGowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
+    "score": 0.9690499135087909,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:56:28.889Z"
+  },
+  {
+    "url": "https://github.com/r0-dev-null/ctf-writeups/tree/main/DCTF%202024%20Quals",
+    "score": 0.1655545055883875,
+    "verdict": "Safe",
+    "timestamp": "2025-05-21T12:56:35.370Z"
+  },
+  {
+    "url": "https://github.com/r0-dev-null/ctf-writeups/tree/main/DCTF%202024%20Quals",
+    "score": 0.1655545055883875,
+    "verdict": "Safe",
+    "timestamp": "2025-05-21T12:58:24.531Z"
+  },
+  {
+    "url": "https://ro.wikipedia.org/wiki/Pagina_principal%C4%83",
+    "score": 0.4916104879594549,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:58:35.657Z"
+  },
+  {
+    "url": "https://www.facebook.com/",
+    "score": 0.4916104879594549,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:59:05.219Z"
+  },
+  {
+    "url": "https://yun.ng/c/ctf/picoctf/pwn/format-string-3",
+    "score": 0.346212834771627,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:59:25.904Z"
+  },
+  {
+    "url": "https://poki.com/ro/g/traffic-escape",
+    "score": 0.8070334827096514,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:59:35.126Z"
+  },
+  {
+    "url": "https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github",
+    "score": 0.07069217582129514,
+    "verdict": "Safe",
+    "timestamp": "2025-05-21T12:59:42.455Z"
+  },
+  {
+    "url": "https://chatgpt.com/c/682c309f-e968-8002-9e93-97f7bd3fe452?model=o4-mini-high",
+    "score": 0.6481427900628628,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T12:59:53.425Z"
+  },
+  {
+    "url": "https://gatlabs.com/blogpost/how-and-why-to-whitelist-a-domain-in-gmail/",
+    "score": 1,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T13:08:10.317Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=whitelist+domains&sca_esv=fee75db914028769&ei=980taK2XIKaqi-gPkM2suAw&ved=0ahUKEwjt7rjgzrSNAxUm1QIHHZAmC8cQ4dUDCBA&uact=5&oq=whitelist+domains&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgCIhF3aGl0ZWxpc3QgZG9tYWluczIFEAAYgAQyBhAAGBYYHjIIEAAYFhgKGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkiqMlDGB1ibMXACeACQAQCYAZ0BoAGZD6oBBDEwLji4AQPIAQD4AQGYAhSgApMQqAIUwgITEAAYgAQYQxi0AhiKBRjqAtgBAcICGRAuGIAEGNEDGEMYtAIYxwEYigUY6gLYAQHCAhMQLhiABBhDGLQCGIoFGOoC2AEBwgIQEAAYAxi0AhjqAhiPAdgBAsICEBAuGAMYtAIY6gIYjwHYAQLCAhAQABiABBixAxhDGIMBGIoFwgIREC4YgAQYsQMY0QMYgwEYxwHCAgsQABiABBixAxiDAcICDhAAGIAEGLEDGIMBGIoFwgIOEC4YgAQYxwEYjgUYrwHCAggQLhiABBjUAsICCBAAGIAEGLEDwgIFEC4YgATCAggQLhiABBixA8ICIBAuGIAEGLEDGNEDGIMBGMcBGJcFGNwEGN4EGOAE2AECwgILEC4YgAQYsQMY1ALCAhQQLhiABBixAxioAxiYAxiaAxiLA8ICERAuGIAEGLEDGKgDGIsDGJ8DwgIOEC4YgAQYsQMY0QMYxwHCAgsQLhiABBjHARivAcICGhAuGIAEGLEDGNQCGJcFGNwEGN4EGOAE2AECwgIQEC4YgAQY0QMYQxjHARiKBcICDRAAGIAEGLEDGEMYigXCAgoQLhiABBhDGIoFwgIKEAAYgAQYQxiKBcICFBAuGIAEGKYDGMcBGKgDGIsDGK8BwgIKEAAYgAQYChiLA8ICBxAuGIAEGArCAgkQABiABBgTGA3CAgwQABiABBgTGIsDGA2YAxTxBZZGInve_kOGugYECAEYB7oGBggCEAEYCpIHBTEwLjEwoAf1tAGyBwQ4LjEwuAf7D8IHBjItMTcuM8gHbg&sclient=gws-wiz-serp",
+    "score": 0.969049913508791,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T13:09:04.995Z"
+  },
+  {
+    "url": "https://www.rand.org/research/projects/truth-decay/fighting-disinformation/search/items/domain-whitelist.html",
+    "score": 0.6481427900628628,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T13:09:07.111Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=whitelist+domains&sca_esv=fee75db914028769&ei=980taK2XIKaqi-gPkM2suAw&ved=0ahUKEwjt7rjgzrSNAxUm1QIHHZAmC8cQ4dUDCBA&uact=5&oq=whitelist+domains&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgCIhF3aGl0ZWxpc3QgZG9tYWluczIFEAAYgAQyBhAAGBYYHjIIEAAYFhgKGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkiqMlDGB1ibMXACeACQAQCYAZ0BoAGZD6oBBDEwLji4AQPIAQD4AQGYAhSgApMQqAIUwgITEAAYgAQYQxi0AhiKBRjqAtgBAcICGRAuGIAEGNEDGEMYtAIYxwEYigUY6gLYAQHCAhMQLhiABBhDGLQCGIoFGOoC2AEBwgIQEAAYAxi0AhjqAhiPAdgBAsICEBAuGAMYtAIY6gIYjwHYAQLCAhAQABiABBixAxhDGIMBGIoFwgIREC4YgAQYsQMY0QMYgwEYxwHCAgsQABiABBixAxiDAcICDhAAGIAEGLEDGIMBGIoFwgIOEC4YgAQYxwEYjgUYrwHCAggQLhiABBjUAsICCBAAGIAEGLEDwgIFEC4YgATCAggQLhiABBixA8ICIBAuGIAEGLEDGNEDGIMBGMcBGJcFGNwEGN4EGOAE2AECwgILEC4YgAQYsQMY1ALCAhQQLhiABBixAxioAxiYAxiaAxiLA8ICERAuGIAEGLEDGKgDGIsDGJ8DwgIOEC4YgAQYsQMY0QMYxwHCAgsQLhiABBjHARivAcICGhAuGIAEGLEDGNQCGJcFGNwEGN4EGOAE2AECwgIQEC4YgAQY0QMYQxjHARiKBcICDRAAGIAEGLEDGEMYigXCAgoQLhiABBhDGIoFwgIKEAAYgAQYQxiKBcICFBAuGIAEGKYDGMcBGKgDGIsDGK8BwgIKEAAYgAQYChiLA8ICBxAuGIAEGArCAgkQABiABBgTGA3CAgwQABiABBgTGIsDGA2YAxTxBZZGInve_kOGugYECAEYB7oGBggCEAEYCpIHBTEwLjEwoAf1tAGyBwQ4LjEwuAf7D8IHBjItMTcuM8gHbg&sclient=gws-wiz-serp",
+    "score": 0.9690499135087909,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T13:09:12.075Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=wikipedia&sca_esv=fee75db914028769&ei=ts8taOi9DfuO9u8PmKnB2Ac&oq=wiki&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgDIgR3aWtpKgIIADILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyEBAuGIAEGNEDGEMYxwEYigUyBRAAGIAEMgUQABiABDILEC4YgAQY0QMYxwEyBRAAGIAEMg0QLhiABBjRAxjHARgKSP8iUMQTWLwXcAF4AJABAJgBjQGgAdcDqgEDMC40uAEByAEA-AEBmAIFoAL6A6gCCsICHRAAGIAEGLQCGNQDGOUCGLcDGIoFGOoCGIoD2AEBwgIQEC4YAxi0AhjqAhiPAdgBAcICEBAAGAMYtAIY6gIYjwHYAQHCAhIQLhgDGLQCGOoCGAoYjwHYAQHCAhEQLhiABBixAxjRAxiDARjHAcICChAAGIAEGEMYigXCAg4QABiABBixAxiDARiKBcICIBAuGIAEGLEDGNEDGIMBGMcBGJcFGNwEGN4EGOAE2AECwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICCBAAGIAEGLEDwgIOEC4YgAQYsQMYgwEYigXCAiUQLhiABBixAxjRAxhDGIMBGMcBGIoFGJcFGNwEGN4EGOAE2AECwgIZEC4YgAQY0QMY0gMYQxjHARioAxiKBRiLA8ICCBAAGIAEGIsDmAMM8QUWiTzBOkr1v7oGBAgBGAe6BgYIAhABGBSSBwMxLjSgB-cusgcDMC40uAfuA8IHBTItNC4xyAce&sclient=gws-wiz-serp",
+    "score": 0.9690499135087909,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T13:09:22.660Z"
+  },
+  {
+    "url": "https://ro.wikipedia.org/wiki/Pagina_principal%C4%83",
+    "score": 0.4916104879594548,
+    "verdict": "Safe",
+    "timestamp": "2025-05-21T13:09:25.261Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=wikipedia&sca_esv=fee75db914028769&ei=ts8taOi9DfuO9u8PmKnB2Ac&oq=wiki&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgDIgR3aWtpKgIIADILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMgUQABiABDIFEAAYgAQyEBAuGIAEGNEDGEMYxwEYigUyBRAAGIAEMgUQABiABDILEC4YgAQY0QMYxwEyBRAAGIAEMg0QLhiABBjRAxjHARgKSP8iUMQTWLwXcAF4AJABAJgBjQGgAdcDqgEDMC40uAEByAEA-AEBmAIFoAL6A6gCCsICHRAAGIAEGLQCGNQDGOUCGLcDGIoFGOoCGIoD2AEBwgIQEC4YAxi0AhjqAhiPAdgBAcICEBAAGAMYtAIY6gIYjwHYAQHCAhIQLhgDGLQCGOoCGAoYjwHYAQHCAhEQLhiABBixAxjRAxiDARjHAcICChAAGIAEGEMYigXCAg4QABiABBixAxiDARiKBcICIBAuGIAEGLEDGNEDGIMBGMcBGJcFGNwEGN4EGOAE2AECwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBcICCBAAGIAEGLEDwgIOEC4YgAQYsQMYgwEYigXCAiUQLhiABBixAxjRAxhDGIMBGMcBGIoFGJcFGNwEGN4EGOAE2AECwgIZEC4YgAQY0QMY0gMYQxjHARioAxiKBRiLA8ICCBAAGIAEGIsDmAMM8QUWiTzBOkr1v7oGBAgBGAe6BgYIAhABGBSSBwMxLjSgB-cusgcDMC40uAfuA8IHBTItNC4xyAce&sclient=gws-wiz-serp",
+    "score": 0.9690499135087909,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-21T13:09:34.174Z"
+  },
+  {
+    "url": "https://www.facebook.com/",
+    "score": 0.4916104879594549,
+    "verdict": "Safe",
+    "timestamp": "2025-05-21T13:09:39.656Z"
+  },
+  {
+    "url": "https://www.bugbountytraining.com/challenges/challenge-8.php#clk=%3Cimg%20src=x%20onerror=alert(1)%3E",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-05-29T09:22:55.388Z"
+  },
+  {
+    "url": "https://account.hackthebox.com/login",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-05-29T09:23:57.554Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=wikipedia&oq=wiki&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBwgCEAAYjwIyBggDEEUYOTIGCAQQRRg8MgYIBRBFGEEyBggGEEUYQTIGCAcQLhhA0gEIMjI1MWowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-05-29T09:24:11.485Z"
+  },
+  {
+    "url": "https://ro.wikipedia.org/wiki/Pagina_principal%C4%83",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-05-29T09:24:17.699Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=wikipedia&oq=wiki&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBwgCEAAYjwIyBggDEEUYOTIGCAQQRRg8MgYIBRBFGEEyBggGEEUYQTIGCAcQLhhA0gEIMjI1MWowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-05-29T09:24:26.969Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=6J15mURvshc&list=RDDglTMWvUXsE&index=12",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-05-29T09:24:36.234Z"
+  },
+  {
+    "url": "https://www.facebook.com/",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-05-29T09:24:38.120Z"
+  },
+  {
+    "url": "https://ro.wikipedia.org/wiki/Pagina_principal%C4%83",
+    "score": 0.8535088896751404,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-29T09:28:16.544Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=wikipedia&oq=wiki&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBwgCEAAYjwIyBggDEEUYOTIGCAQQRRg8MgYIBRBFGEEyBggGEEUYQTIGCAcQLhhA0gEIMjI1MWowajGoAgCwAgA&sourceid=chrome&ie=UTF-8",
+    "score": 0.9955713152885437,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-29T09:28:49.694Z"
+  },
+  {
+    "url": "https://www.facebook.com/",
+    "score": 0.9947715401649475,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-29T09:28:56.812Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=GjnXrHD1rnQ&list=RDDglTMWvUXsE&index=14",
+    "score": 0.9992117881774902,
+    "verdict": "Phishing",
+    "timestamp": "2025-05-29T09:29:59.414Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=translate&oq=translate&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgcIARAAGI8CMgcIAhAAGI8CMgYIAxAuGEDSAQgxMzg1ajBqMagCALACAA&sourceid=chrome&ie=UTF-8",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-06-02T19:50:27.710Z"
+  },
+  {
+    "url": "https://translate.google.ro/",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-06-02T19:50:38.614Z"
+  },
+  {
+    "url": "https://translate.google.ro/?sl=auto&tl=ro&op=translate",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-06-02T19:50:39.206Z"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-06-02T19:50:46.011Z"
+  },
+  {
+    "url": "https://github.com/sannjayy/python-phishing-url-detection/blob/master/featureExtractor.py",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-06-02T19:50:57.413Z"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-06-02T19:58:39.459Z"
+  },
+  {
+    "url": "https://github.com/sannjayy/python-phishing-url-detection/blob/master/featureExtractor.py",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-06-02T19:58:47.974Z"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-06-02T20:04:07.539Z"
+  },
+  {
+    "url": "https://chatgpt.com/c/683deced-38ac-8002-bc9c-c00e4e0aef7b",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-06-02T20:04:16.374Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=TdYNDCME8pc&list=RDMM&index=20",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-06-04T17:47:19.876Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=DglTMWvUXsE&list=RDMM&index=21",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-06-04T17:51:04.775Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=aYCuEONIIDM&list=RDMM&index=23",
+    "score": 0,
+    "verdict": "Safe",
+    "timestamp": "2025-06-04T17:57:59.417Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=4YokR9cfjHU&list=RDMM&index=24",
+    "score": 0.8230999708175659,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-04T18:00:20.432Z"
+  },
+  {
+    "url": "https://github.com/sannjayy/python-phishing-url-detection/blob/master/main.py",
+    "score": 0.920199990272522,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-04T18:00:50.688Z"
+  },
+  {
+    "url": "https://chatgpt.com/c/684071c8-2e48-8002-87ae-872da946ea8c",
+    "score": 0.9998000264167786,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-04T18:01:09.242Z"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "score": 0.5289000272750854,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-04T18:01:19.840Z"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "score": 0.5289000272750854,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-04T18:02:57.393Z"
+  },
+  {
+    "url": "https://github.com/Click2Hack/Phishing-Email-Detection-Using-Machine-Learning/blob/main/requirements/app.py",
+    "score": 0.8812000155448914,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-04T18:03:15.198Z"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "score": 0.5289000272750854,
+    "verdict": "Safe",
+    "timestamp": "2025-06-04T18:04:52.393Z"
+  },
+  {
+    "url": "https://github.com/shreyagopal/Phishing-Website-Detection-by-Machine-Learning-Techniques/blob/master/Phishing%20Website%20Detection_Models%20%26%20Training.ipynb",
+    "score": 0.8016999959945679,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-04T18:05:00.286Z"
+  },
+  {
+    "url": "https://chatgpt.com/c/684071c8-2e48-8002-87ae-872da946ea8c",
+    "score": 0.9998000264167786,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-04T18:05:16.346Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Igtus2nzMsc&list=RDMM&index=26",
+    "score": 0.8230999708175659,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-04T18:07:30.603Z"
+  },
+  {
+    "url": "https://account.hackthebox.com/login",
+    "score": 0.6499999761581421,
+    "verdict": "Safe",
+    "timestamp": "2025-06-04T18:08:21.404Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Igtus2nzMsc&list=RDMM&index=28",
+    "score": 0.8230999708175659,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:06:19.372Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Igtus2nzMsc&list=RDMM&index=27",
+    "score": 0.8230999708175659,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:06:19.672Z"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "score": 0.5289000272750854,
+    "verdict": "Safe",
+    "timestamp": "2025-06-05T19:06:32.488Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=whois&oq=whois&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg8MgcIAhAAGI8CMgYIAxAuGEDSAQg4MzA3ajBqMagCALACAA&sourceid=chrome&ie=UTF-8",
+    "score": 0.9107999801635742,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:07:26.377Z"
+  },
+  {
+    "url": "https://who.is/",
+    "score": 0.9998999834060669,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:07:30.177Z"
+  },
+  {
+    "url": "https://who.is/whois/youtube.comwatchvigtus2nzmsclistrdmmindex28",
+    "score": 0.8421000242233276,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:07:52.943Z"
+  },
+  {
+    "url": "https://who.is/privacy/youtube.comwatchvigtus2nzmsclistrdmmindex28",
+    "score": 0.8799999952316284,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:08:04.383Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=thUxtOe0SQM",
+    "score": 0.5333999991416931,
+    "verdict": "Safe",
+    "timestamp": "2025-06-05T19:19:49.025Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Igtus2nzMsc&list=RDMM&index=28",
+    "score": 0.8230999708175659,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:20:08.814Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Igtus2nzMsc&list=RDMM&index=29",
+    "score": 0.8230999708175659,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:20:09.424Z"
+  },
+  {
+    "url": "https://www.youtube.com/",
+    "score": 0.5289000272750854,
+    "verdict": "Safe",
+    "timestamp": "2025-06-05T19:21:25.572Z"
+  },
+  {
+    "url": "https://www.youtube.com/results?search_query=MEYSTA%2C+Robbe+%26+Golden+Wizards+-+Like+A+G6",
+    "score": 0.97079998254776,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:21:27.883Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Igtus2nzMsc",
+    "score": 0.5333999991416931,
+    "verdict": "Safe",
+    "timestamp": "2025-06-05T19:21:40.176Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?t=15&v=Igtus2nzMsc&feature=youtu.be",
+    "score": 0.9793999791145325,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:22:03.456Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Igtus2nzMsc&t=15s",
+    "score": 0.6608999967575073,
+    "verdict": "Safe",
+    "timestamp": "2025-06-05T19:22:03.866Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=netloc&oq=netloc&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEHNTAyajBqMagCALACAA&sourceid=chrome&ie=UTF-8",
+    "score": 0.8138999938964844,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:26:16.962Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Igtus2nzMsc",
+    "score": 0.5289000272750854,
+    "verdict": "Safe",
+    "timestamp": "2025-06-05T19:30:18.835Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Igtus2nzMsc&list=RDMM&index=29",
+    "score": 0.5289000272750854,
+    "verdict": "Safe",
+    "timestamp": "2025-06-05T19:30:33.124Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Igtus2nzMsc&list=RDMM&index=30",
+    "score": 0.5289000272750854,
+    "verdict": "Safe",
+    "timestamp": "2025-06-05T19:30:33.206Z"
+  },
+  {
+    "url": "https://www.youtube.com/results?search_query=in+gura+presei",
+    "score": 0.5289000272750854,
+    "verdict": "Safe",
+    "timestamp": "2025-06-05T19:30:57.941Z"
+  },
+  {
+    "url": "https://www.google.com/",
+    "score": 0.5350000262260437,
+    "verdict": "Safe",
+    "timestamp": "2025-06-05T19:31:15.880Z"
+  },
+  {
+    "url": "https://www.google.com/search?q=wikipedia&sca_esv=cc2ca69670373081&sxsrf=AE3TifN6yOLDKwQY5J51ckbeKdFm27-ehA%3A1749151874002&source=hp&ei=gfBBaM7EOq6U9u8P2fqwmQ8&iflsig=AOw8s4IAAAAAaEH-kjYUwR0aoZll1AuSOWRXbGnIXG0h&ved=0ahUKEwiOiezAgtuNAxUuiv0HHVk9LPMQ4dUDCBk&uact=5&oq=wikipedia&gs_lp=Egdnd3Mtd2l6Igl3aWtpcGVkaWEyChAjGIAEGCcYigUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgsQABiABBiSAxiKBTIFEAAYgARI3wZQAFjYBnAAeACQAQCYAXigAbcGqgEDNS4zuAEDyAEA-AEBmAIIoALeBsICEBAjGPAFGIAEGCcYyQIYigXCAhEQLhiABBixAxjRAxiDARjHAcICDhAuGIAEGLEDGNEDGMcBwgILEAAYgAQYsQMYgwHCAggQABiABBixA8ICDhAuGIAEGLEDGIMBGIoFmAMAkgcDNC40oAf2PLIHAzQuNLgH3gbCBwUwLjMuNcgHIQ&sclient=gws-wiz",
+    "score": 0.5350000262260437,
+    "verdict": "Safe",
+    "timestamp": "2025-06-05T19:31:18.631Z"
+  },
+  {
+    "url": "https://ro.wikipedia.org/wiki/Pagina_principal%C4%83",
+    "score": 0.5580000281333923,
+    "verdict": "Safe",
+    "timestamp": "2025-06-05T19:31:28.501Z"
+  },
+  {
+    "url": "https://ro.wikipedia.org/w/index.php?search=blabla&title=Special%3AC%C4%83utare&ns0=1",
+    "score": 0.5580000281333923,
+    "verdict": "Safe",
+    "timestamp": "2025-06-05T19:31:31.902Z"
+  },
+  {
+    "url": "https://github.com/Peco602/very-simple-malware-detector",
+    "score": 0.9998000264167786,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:31:42.137Z"
+  },
+  {
+    "url": "https://www.example.com/",
+    "score": 0.5289000272750854,
+    "verdict": "Safe",
+    "timestamp": "2025-06-05T19:33:08.997Z"
+  },
+  {
+    "url": "https://github.com/sannjayy/python-phishing-url-detection/blob/master/main.py",
+    "score": 0.9998000264167786,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:33:51.838Z"
+  },
+  {
+    "url": "https://github.com/",
+    "score": 0.9998000264167786,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:34:03.664Z"
+  },
+  {
+    "url": "https://www.uvt.ro/",
+    "score": 0.9531999826431274,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:34:20.311Z"
+  },
+  {
+    "url": "https://www.netflix.com/ro/",
+    "score": 0.7512000203132629,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:45:57.679Z"
+  },
+  {
+    "url": "https://realpython.com/python-sockets/#multi-connection-client-and-server",
+    "score": 0.9998999834060669,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T19:46:14.895Z"
+  },
+  {
+    "url": "https://realpython.com/python-sockets/#multi-connection-client-and-server",
+    "score": 0.9998999834060669,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T20:11:05.234Z"
+  },
+  {
+    "url": "http://github.om/",
+    "score": 0.9998999834060669,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T20:15:28.433Z"
+  },
+  {
+    "url": "https://github.com/",
+    "score": 0.9998000264167786,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T20:15:32.320Z"
+  },
+  {
+    "url": "https://chatgpt.com/g/g-p-67fa63796f78819196f229093a3ab053-protectu-react/project",
+    "score": 0.9998000264167786,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T20:15:54.239Z"
+  },
+  {
+    "url": "https://github.com/",
+    "score": 0.9998000264167786,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T20:16:37.257Z"
+  },
+  {
+    "url": "https://github.com/new",
+    "score": 0.9998000264167786,
+    "verdict": "Phishing",
+    "timestamp": "2025-06-05T20:16:41.517Z"
+  }
+]
