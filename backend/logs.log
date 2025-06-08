@@ -24062,3 +24062,121 @@ Alternately, you can install this by running `pip install pycaret[models]`
 2025-06-08 09:24:24,921:INFO:Preloading libraries
 2025-06-08 09:24:24,921:INFO:Set up data.
 2025-06-08 09:24:24,925:INFO:Set up index.
+2025-06-08 10:02:04,919:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-08 10:02:04,919:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-08 10:02:04,919:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-08 10:02:04,919:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-08 10:02:05,335:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-06-08 10:02:05,960:INFO:Initializing load_model()
+2025-06-08 10:02:05,961:INFO:load_model(model_name=models/xgb_gpu_final, platform=None, authentication=None, verbose=True)
+2025-06-08 10:02:06,255:INFO:Initializing predict_model()
+2025-06-08 10:02:06,255:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f3406eb3dc0>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['URL_Length', 'URL_Depth',
+                                             'TinyURL', 'Prefix/Suffix',
+                                             'No_Of_Dots', 'Sensitive_Words',
+                                             'Domain_Age', 'Domain_End',
+                                             'Has_Unicode', 'Have_AtSign',
+                                             'Having_IP', 'iFrame',
+                                             'Web_Forwar...
+                               grow_policy=None, importance_type=None,
+                               interaction_constraints=None,
+                               learning_rate=0.17854603263343558, max_bin=None,
+                               max_cat_threshold=None, max_cat_to_onehot=None,
+                               max_delta_step=None, max_depth=10,
+                               max_leaves=None, min_child_weight=4, missing=nan,
+                               monotone_constraints=None, n_estimators=88,
+                               n_jobs=-1, num_parallel_tree=None,
+                               predictor=None, random_state=123, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f340702c280>)
+2025-06-08 10:02:06,255:INFO:Checking exceptions
+2025-06-08 10:02:06,255:INFO:Preloading libraries
+2025-06-08 10:02:06,255:INFO:Set up data.
+2025-06-08 10:02:06,282:INFO:Set up index.
+2025-06-08 10:02:09,827:INFO:Initializing load_model()
+2025-06-08 10:02:09,827:INFO:load_model(model_name=models/xgb_gpu_final_baseline, platform=None, authentication=None, verbose=True)
+2025-06-08 10:02:11,026:INFO:Initializing predict_model()
+2025-06-08 10:02:11,026:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f344a7f3a60>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['URL_Length', 'URL_Depth',
+                                             'TinyURL', 'Prefix/Suffix',
+                                             'No_Of_Dots', 'Sensitive_Words',
+                                             'Domain_Age', 'Domain_End',
+                                             'Has_Unicode', 'Have_AtSign',
+                                             'Having_IP', 'iFrame',
+                                             'Web_Forwar...
+                               grow_policy=None, importance_type=None,
+                               interaction_constraints=None,
+                               learning_rate=0.16691414260009865, max_bin=None,
+                               max_cat_threshold=None, max_cat_to_onehot=None,
+                               max_delta_step=None, max_depth=9,
+                               max_leaves=None, min_child_weight=4, missing=nan,
+                               monotone_constraints=None, n_estimators=135,
+                               n_jobs=-1, num_parallel_tree=None,
+                               predictor=None, random_state=123, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f3406f6b7f0>)
+2025-06-08 10:02:11,026:INFO:Checking exceptions
+2025-06-08 10:02:11,026:INFO:Preloading libraries
+2025-06-08 10:02:11,026:INFO:Set up data.
+2025-06-08 10:02:11,050:INFO:Set up index.
+2025-06-08 10:02:14,532:INFO:Initializing load_model()
+2025-06-08 10:02:14,532:INFO:load_model(model_name=models/xgb_gpu_final_spw_3.31, platform=None, authentication=None, verbose=True)
+2025-06-08 10:02:14,697:INFO:Initializing predict_model()
+2025-06-08 10:02:14,697:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f3406f6e320>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['URL_Length', 'URL_Depth',
+                                             'TinyURL', 'Prefix/Suffix',
+                                             'No_Of_Dots', 'Sensitive_Words',
+                                             'Domain_Age', 'Domain_End',
+                                             'Has_Unicode', 'Have_AtSign',
+                                             'Having_IP', 'iFrame',
+                                             'Web_Forwar...
+                               grow_policy=None, importance_type=None,
+                               interaction_constraints=None,
+                               learning_rate=0.16691414260009865, max_bin=None,
+                               max_cat_threshold=None, max_cat_to_onehot=None,
+                               max_delta_step=None, max_depth=9,
+                               max_leaves=None, min_child_weight=4, missing=nan,
+                               monotone_constraints=None, n_estimators=135,
+                               n_jobs=-1, num_parallel_tree=None,
+                               predictor=None, random_state=123, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f3406f6add0>)
+2025-06-08 10:02:14,697:INFO:Checking exceptions
+2025-06-08 10:02:14,697:INFO:Preloading libraries
+2025-06-08 10:02:14,697:INFO:Set up data.
+2025-06-08 10:02:14,722:INFO:Set up index.
+2025-06-08 10:02:18,060:INFO:Initializing load_model()
+2025-06-08 10:02:18,060:INFO:load_model(model_name=models/xgb_gpu_final_spw_3.31_dropped, platform=None, authentication=None, verbose=True)
+2025-06-08 10:02:18,232:INFO:Initializing predict_model()
+2025-06-08 10:02:18,232:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f3407010c70>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['URL_Length', 'URL_Depth',
+                                             'TinyURL', 'Prefix/Suffix',
+                                             'No_Of_Dots', 'Sensitive_Words',
+                                             'Domain_Age', 'Domain_End',
+                                             'Has_Unicode', 'Have_AtSign',
+                                             'Having_IP', 'iFrame'],
+                                    transforme...
+                               grow_policy=None, importance_type=None,
+                               interaction_constraints=None,
+                               learning_rate=0.16691414260009865, max_bin=None,
+                               max_cat_threshold=None, max_cat_to_onehot=None,
+                               max_delta_step=None, max_depth=9,
+                               max_leaves=None, min_child_weight=4, missing=nan,
+                               monotone_constraints=None, n_estimators=135,
+                               n_jobs=-1, num_parallel_tree=None,
+                               predictor=None, random_state=123, ...))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7f3407007e20>)
+2025-06-08 10:02:18,232:INFO:Checking exceptions
+2025-06-08 10:02:18,232:INFO:Preloading libraries
+2025-06-08 10:02:18,232:INFO:Set up data.
+2025-06-08 10:02:18,254:INFO:Set up index.
