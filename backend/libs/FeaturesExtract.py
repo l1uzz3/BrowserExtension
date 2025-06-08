@@ -1,7 +1,7 @@
 # Inside libs/FeaturesExtract.py
 import os, pickle as pk, pandas as pd, httpx, whois
 from urllib.parse import urlparse
-from backend.libs import ExtractFunc as ef
+from libs import ExtractFunc as ef
 
 def featureExtraction(url):
     # 1) Address-bar features (6)
