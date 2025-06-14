@@ -34,3 +34,39 @@ chrome.runtime.onMessage.addListener((msg) => {
   banner.append(text, closeBtn);
   document.documentElement.prepend(banner);
 });
+
+// --- Email scanning logic ---
+function scanEmail() {
+  const bodyNode = document.querySelector('.email-body-selector');
+  if (!bodyNode) return;
+  const text = bodyNode.innerText;
+  chrome.runtime.sendMessage({ type: 'EMAIL_CHECK', email: text });
+}
+
+// Run on page load and after any DOM updates:
+scanEmail();
+new MutationObserver(scanEmail).observe(document.body, { subtree: true, childList: true });
+
+// --- Listen for email scan results and show phishing warning ---
+chrome.runtime.onMessage.addListener((msg) => {
+  if (msg.type === 'EMAIL_RESULT') {
+    if (msg.result.prediction === 'Phishing Email') {
+      if (!document.getElementById('phish-warning')) {
+        const banner = document.createElement('div');
+        banner.id = 'phish-warning';
+        banner.innerHTML = `
+          ⚠️ <strong>Warning:</strong> This email looks like a phishing attempt. 
+          Confidence: ${(msg.result.confidence*100).toFixed(1)}%
+          <button id="dismiss-phish">Dismiss</button>
+        `;
+        Object.assign(banner.style, {
+          position: 'fixed', top: 0, left: 0, right: 0,
+          background: 'red', color: 'white', padding: '10px', zIndex: 9999
+        });
+        document.body.prepend(banner);
+        banner.querySelector('#dismiss-phish')
+              .addEventListener('click', () => banner.remove());
+      }
+    }
+  }
+});

@@ -3,8 +3,18 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from urllib.parse import urlparse
 
-# Load dataset
-df = pd.read_csv("dataset.csv")
+# Load legit.csv (domains only)
+legit = pd.read_csv("legit.csv", header=None, names=["url"])
+legit["label"] = "legitimate"
+# Convert domains to URLs for uniformity
+legit["url"] = "http://" + legit["url"]
+
+# Load phis.csv (has header 'url')
+phis = pd.read_csv("phis.csv")
+phis["label"] = "phishing"
+
+# Combine datasets
+df = pd.concat([legit, phis], ignore_index=True)
 
 # Basic info
 print("First 5 rows:\n", df.head())

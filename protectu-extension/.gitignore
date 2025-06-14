@@ -85,17 +85,5 @@ logs/
 # Misc
 *.local
 
-# Ignore extracted archives if present
-BrwoserExtension.zip
-backend.zip
-protectu-extension.zip
 
-# Ignore shellstagram output (if not needed in repo)
-shellstagram/output/
 
-# Ignore backend data files (if not needed in repo)
-BrwoserExtension/backend/alerts.json
-
-backend.zip
-Dockerfile
-docker-compose.yml

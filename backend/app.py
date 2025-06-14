@@ -1,29 +1,26 @@
-# ─── app.py ───────────────────────────────────────────────────────────────────────
 import os
-import json
-from datetime import datetime
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import joblib
+import pickle
+import numpy as np
+import pandas as pd
 from urllib.parse import urlparse
+from libs.FeaturesExtract import FeatureExtraction
+from libs.convert import convertion
 
-from libs.FeaturesExtract import featureExtraction
-from pycaret.classification import predict_model
-
-# Load environment variables, model path, threshold, etc.
-MODEL_PATH = os.getenv("PICKLE_MODEL_PATH", "models/phishing_model.pkl")
-THRESHOLD  = float(os.getenv("PH_THRESHOLD", 0.8))
-ALERTS_FILE = os.getenv("ALERTS_PATH", "alerts.json")
+# --- Environment variables and defaults ---
+MODEL_PATH = os.getenv("PICKLE_MODEL_PATH", "./models/trainedmodel.pkl")
 
 # Initialize Flask
 app = Flask(__name__)
 CORS(app, origins=[f"chrome-extension://{os.getenv('CHROME_EXT_ID')}"])
 
-# Load the saved PyCaret pipeline + model
-if not os.path.exists(MODEL_PATH):
-    raise FileNotFoundError(f"Model file not found at '{MODEL_PATH}'")
+# Load model
+with open(MODEL_PATH, "rb") as file:
+    model = pickle.load(file)
 
-MODEL = joblib.load(MODEL_PATH)
+# Grab the feature names the model expects
+FEATURE_NAMES = list(model.feature_names_in_)
 
 def get_root_url(url):
     parsed = urlparse(url)
@@ -33,68 +30,61 @@ def get_root_url(url):
 def check_url():
     data = request.get_json(force=True)
     url  = data.get("url", "")
-    root_url = get_root_url(url)
-    # 1) Extract features
-    features = featureExtraction(root_url)   
-
-    # 2) (optional) verify features columns here…
-
-    # 3) Run PyCaret’s predict_model
-    result = predict_model(MODEL, data=features)
-
-    # Debug: log whatever columns were returned
-    print("DEBUG: predict_model returned columns:", list(result.columns))
-
-    # 4) Try to pick out the positive‐class probability
-    if "Score" in result.columns:
-        prob = float(result.loc[0, "Score"])
-    else:
-        # Remove all known feature columns, plus "Label" and "prediction_label"
-        known = list(features.columns) + ["Label", "prediction_label"]
-        prob_cols = [c for c in result.columns if c not in known]
-        if len(prob_cols) == 1:
-            prob = float(result.loc[0, prob_cols[0]])
-        else:
-            # Last fallback: call predict_proba on the raw array
-            arr = features.to_numpy()
-            prob = float(MODEL.predict_proba(arr)[0, 1])
-
-    decision = "PHISHING" if prob >= THRESHOLD else "LEGITIMATE"
-    return jsonify(decision=decision, score=prob)
-
-
-@app.route("/report-risky-url", methods=["POST"])
-def report_risky_url():
-    entry = request.get_json(force=True)
-    score     = entry.get("predictionScore", entry.get("score", 0.0))
-    verdict   = entry.get("verdict", "Phishing" if score >= THRESHOLD else "Safe")
-    timestamp = entry.get("timestamp", datetime.utcnow().isoformat() + "Z")
-    record = {
-        "url":     entry.get("url", ""),
-        "score":   score,
-        "verdict": verdict,
-        "timestamp": timestamp
-    }
+    if not url:
+        return jsonify({"error": "No URL provided"}), 400
+    features = FeatureExtraction(url).getFeaturesList()
+    df = pd.DataFrame([features], columns=FEATURE_NAMES)
+    y_pred = model.predict(df)[0]
     try:
-        with open(ALERTS_FILE, "r", encoding="utf-8") as f:
-            alerts = json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        alerts = []
-    alerts.append(record)
-    with open(ALERTS_FILE, "w", encoding="utf-8") as f:
-        json.dump(alerts, f, indent=2)
-    return jsonify(status="ok"), 200
+        y_prob = model.predict_proba(df)[0][1]
+    except AttributeError:
+        y_prob = None
 
+    # Only use model prediction for decision
+    decision = "Safe" if y_pred == 1 else "Phishing"
+
+    # Use convert.py logic
+    conversion_result = convertion(url, y_pred)
+
+    return jsonify({
+        "result": decision,
+        "prediction": int(y_pred),
+        "probability": round(float(y_prob), 4) if y_prob is not None else None,
+        "conversion": conversion_result
+    })
 
 @app.route("/config/threshold", methods=["GET", "POST"])
 def config_threshold():
-    global THRESHOLD
+    # Threshold config endpoint kept for compatibility, but not used in prediction
     if request.method == "POST":
-        THRESHOLD = float(request.get_json().get("threshold"))
-        return jsonify(status="ok", threshold=THRESHOLD)
-    return jsonify(threshold=THRESHOLD)
+        threshold = float(request.get_json().get("threshold"))
+        return jsonify(status="ok", threshold=threshold)
+    return jsonify(threshold=None)
+
+@app.route("/predict_email", methods=["POST"])
+def predict_email():
+    data = request.get_json(force=True)
+    email_text = data.get("email", "")
+    if not email_text:
+        return jsonify({"error": "No email content provided"}), 400
+
+    # Load model and vectorizer
+    with open("model/model.pkl", "rb") as model_file:
+        model = pickle.load(model_file)
+    with open("model/vectorizer.pkl", "rb") as vec_file:
+        vectorizer = pickle.load(vec_file)
+
+    X = vectorizer.transform([email_text])
+    prediction = model.predict(X)[0]
+    confidence = model.predict_proba(X)[0][1]  # Probability of phishing
+
+    verdict = "Phishing Email" if prediction == 1 else "Safe Email"
+    return jsonify({
+        "prediction": verdict,
+        "confidence": float(confidence)
+    })
 
 
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", 5030))
-    app.run(host="0.0.0.0", port=port, debug=True)
+    # This will start the server with auto-reload on code changes
+    app.run(debug=True, port=5030)

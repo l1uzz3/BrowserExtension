@@ -71,18 +71,43 @@ async function handleUrl(tabId, url) {
     chrome.storage.local.set({ alerts: [...alerts, entry] });
   });
 
-  // Report back to backend
-  try {
-    await fetch(`${API_BASE}/report-risky-url`, {
+  // No longer report to backend
+  console.log('[ProtectU] Not reporting to backend (report-risky-url removed).');
+}
+
+/**
+ * Listen for email check requests from content or popup scripts.
+ */
+chrome.runtime.onMessage.addListener((msg, sender, sendResp) => {
+  if (msg.type === 'EMAIL_CHECK') {
+    fetch('http://localhost:5030/predict_email', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(entry)
+      body: JSON.stringify({ email: msg.email })
+    })
+    .then(r => r.json())
+    .then(data => {
+      chrome.tabs.sendMessage(sender.tab.id, {
+        type: 'EMAIL_RESULT',
+        result: data
+      });
+
+      // --- Add this block to persist email alerts ---
+      const entry = {
+        type: 'email',
+        verdict: data.prediction === 'Phishing Email' ? 'Phishing' : 'Safe',
+        predictionScore: data.confidence,
+        emailSnippet: (msg.email || '').slice(0, 100), // Save a snippet for display
+        timestamp: new Date().toISOString()
+      };
+      chrome.storage.local.get({ alerts: [] }, ({ alerts }) => {
+        chrome.storage.local.set({ alerts: [...alerts, entry] });
+      });
+      // --- end block ---
     });
-    console.log('[ProtectU] Reported to backend.');
-  } catch (err) {
-    console.error('[ProtectU] Reporting failed:', err);
+    return true; // keep sendResp alive
   }
-}
+});
 
 // Full-page navigations
 chrome.webNavigation.onCompleted.addListener(({ tabId, url, frameId }) => {

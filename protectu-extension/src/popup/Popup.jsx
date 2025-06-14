@@ -20,7 +20,6 @@ const Popup = () => {
     chrome.storage.local.set({ alerts: [] }, () => {
       setLogs([]);
     });
-    // Optionally notify backend to clear alerts.json
     fetch("http://127.0.0.1:8000/clear-alerts", {
       method: "POST",
     }).catch((err) => console.error("Failed to clear backend logs:", err));
@@ -58,6 +57,38 @@ const Popup = () => {
           marginTop: logs.length ? 0 : 8,
         }}>
         {logs.map((e, i) => {
+          if (e.type === "email") {
+            const isPhish = e.verdict === "Phishing";
+            return (
+              <li
+                key={i}
+                style={{
+                  marginBottom: 8,
+                  padding: 8,
+                  borderLeft: `4px solid ${isPhish ? "#c62828" : "#388e3c"}`,
+                  background: "#fff3e0",
+                  borderRadius: 4,
+                  fontSize: 13,
+                }}>
+                <div>
+                  <strong>Email:</strong>{" "}
+                  <span title={e.emailSnippet}>{e.emailSnippet}...</span>
+                </div>
+                <div>
+                  <strong>Verdict:</strong> {e.verdict}
+                </div>
+                <div>
+                  <strong>Confidence:</strong>{" "}
+                  {(e.predictionScore * 100).toFixed(1)}%
+                </div>
+                <div>
+                  <strong>Time:</strong>{" "}
+                  {new Date(e.timestamp).toLocaleString()}
+                </div>
+              </li>
+            );
+          }
+          // Default: URL alert
           const isPhish = e.verdict === "Phishing";
           return (
             <li
