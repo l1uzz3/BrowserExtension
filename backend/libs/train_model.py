@@ -1,42 +1,50 @@
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import HistGradientBoostingClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import classification_report
 import pickle
 import os
+from tqdm import tqdm
 
-# Paths to your CSV files
-LEGIT_PATH = "../datasets/legit.csv"
-PHISH_PATH = "../datasets/phis.csv"
-MODEL_OUT = "../models/trainedmodel.pkl"
+# Enable tqdm for pandas
+tqdm.pandas(desc="Processing rows")
 
-# Load legitimate URLs
-legit_df = pd.read_csv(LEGIT_PATH)
-legit_df['label'] = 'legitimate'
+# Path to the combined phishing dataset (features already extracted)
+DATA_PATH = "../datasets/phishing.csv"
+MODEL_OUT = "../models/trainedmodel_test.pkl"
 
-# Load phishing URLs
-phish_df = pd.read_csv(PHISH_PATH)
-phish_df['label'] = 'phishing'
-
-# Combine datasets
-df = pd.concat([legit_df, phish_df], ignore_index=True)
+# Load dataset
+df = pd.read_csv(DATA_PATH)
 
 # Drop 'Index' column if present
 if 'Index' in df.columns:
     df = df.drop(columns=['Index'])
 
-# Drop non-feature columns (like 'url' if present)
-feature_cols = [col for col in df.columns if col not in ['url', 'label']]
-X = df[feature_cols]
-y = df['label'].map({'legitimate': 1, 'phishing': 0})
+# Split into features and label
+X = df.drop(columns=['class'])
+y = df['class']
 
-# Train the model
-model = RandomForestClassifier(n_estimators=100, random_state=42)
-model.fit(X, y)
+# Train-test split (80% train, 20% test)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Ensure the output directory exists
+# Train the model using parallelized HistGradientBoostingClassifier
+print("🚀 Training the model...")
+model = HistGradientBoostingClassifier(max_iter=100, learning_rate=0.1, max_depth=3, random_state=42)
+model.fit(X_train, y_train)
+print("✅ Model training complete.")
+
+# Predict on test set
+y_pred = model.predict(X_test)
+
+# Classification report
+print("\n📊 Classification Report:")
+print(classification_report(y_test, y_pred, target_names=['Phishing', 'Legitimate']))
+
+# Ensure output directory exists
 os.makedirs(os.path.dirname(MODEL_OUT), exist_ok=True)
 
 # Save the trained model
 with open(MODEL_OUT, "wb") as f:
     pickle.dump(model, f)
 
-print(f"Model trained and saved to {MODEL_OUT}")
+print(f"✅ Model saved to {MODEL_OUT}")
